@@ -1,7 +1,7 @@
 {
-  "name": "swagger-vue",
-  "version": "1.0.3",
-  "description": "Swagger to JS & Vue & Axios Codegen",
+  "name": "swagger-es6",
+  "version": "0.9.0",
+  "description": "Swagger.json to ES6 Client Generator",
   "main": "index.js",
   "scripts": {
     "gen:api": "node example/create_api/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenweiqun/swagger-vue.git"
+    "url": "git+https://github.com/vranahub/swagger-es6.git"
   },
   "keywords": [
     "swagger",
@@ -18,12 +18,12 @@
     "vue",
     "codegen"
   ],
-  "author": "chenweiqun",
+  "author": "vranahub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chenweiqun/swagger-vue/issues"
+    "url": "https://github.com/vranahub/swagger-es6/issues"
   },
-  "homepage": "https://github.com/chenweiqun/swagger-vue#readme",
+  "homepage": "https://github.com/vranahub/swagger-es6#readme",
   "dependencies": {
     "handlebars": "^4.0.6",
     "js-beautify": "^1.6.12",
