@@ -39,6 +39,12 @@ export const {{&methodName}} = function(parameters = {}) {
         }
     {{/isFormParameter}}
 
+    {{#isHeaderParameter}}
+        if(parameters['{{&camelCaseName}}'] !== undefined) {
+            config.headers['{{&name}}'] = parameters['{{&camelCaseName}}']
+        }
+    {{/isHeaderParameter}}
+
     {{#required}}
         if(parameters['{{&camelCaseName}}'] === undefined) {
             return Promise.reject(new Error('Missing required {{&paramType}} parameter: {{&camelCaseName}}'))

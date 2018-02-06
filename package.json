@@ -1,6 +1,6 @@
 {
   "name": "swagger-es6",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Swagger.json to ES6 Client Generator",
   "main": "index.js",
   "scripts": {
