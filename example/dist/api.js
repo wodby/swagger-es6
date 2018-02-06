@@ -1,7 +1,7 @@
 /* eslint-disable */
-import axios from 'axios'
-import qs from 'qs'
-let domain = ''
+import axios from 'axios';
+import qs from 'qs';
+let domain = '';
 export const getDomain = () => {
   return domain
 }
