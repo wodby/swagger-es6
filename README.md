@@ -12,7 +12,7 @@ npm install swagger-es6 --dev
 
 ## Using NodeJS file
 
-````javascript
+```javascript
 const swaggerGen = require('swagger-es6')
 const jsonData = require('../api-docs.json')
 const fs = require('fs')
@@ -25,8 +25,9 @@ let opt = {
 }
 const codeResult = swaggerGen(opt)
 fs.writeFileSync(path.join(__dirname, '../dist/api.js'), codeResult)
+```
 
-# Generated client usage
+## Generated client usage
 
 In JS main file set API domain
 ```javascript
@@ -59,6 +60,7 @@ fetchClients({
 }).then(function (response) {
   console.log(response.data) // [{ name: 'Jon', age: 64 }, { name: 'Ada', age: 24 }, { name: 'Alan', age: 38 }]
 })```
+````
 
 All requests use **axios** module with promise, for more information about that follow axios documentation
 
@@ -69,4 +71,3 @@ All requests use **axios** module with promise, for more information about that 
 # License
 
 [MIT](https://opensource.org/licenses/MIT)
-````
