@@ -38,7 +38,7 @@ setDomain(server)
 
 Import API function into JS component, for example to log in
 
-````javascript
+```javascript
 import { user_login as userLogin } from '../lib/api-client.js'
 
 userLogin({
@@ -48,7 +48,8 @@ userLogin({
   }
 }).then(function (response) {
   console.log(response.data) // {id: "<token>", ttl: 1209600, created: "2017-01-01T00:00:00.000Z", userId: 1}
-})```
+})
+```
 
 Using authentication header:
 
@@ -59,8 +60,8 @@ fetchClients({
   xAccessToken: 'some_very_secure_token'
 }).then(function (response) {
   console.log(response.data) // [{ name: 'Jon', age: 64 }, { name: 'Ada', age: 24 }, { name: 'Alan', age: 38 }]
-})```
-````
+})
+```
 
 All requests use **axios** module with promise, for more information about that follow axios documentation
 
