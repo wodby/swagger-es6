@@ -10,7 +10,7 @@
 */
 export const {{&methodName}} = function(parameters = {}) {
     const domain = parameters.$domain ? parameters.$domain : getAPIDomain()
-    const config = parameters.$config || { headers: {} }
+    const config = parameters.$config ? parameters.$config : getAPIConfig()
     let path = '{{&path}}'
     let body
     let queryParameters = {}
